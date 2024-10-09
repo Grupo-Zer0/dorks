@@ -1,10 +1,66 @@
 # Google Dorks
 
-Vamos a buscar varios dorks en [Google Hacking Database](https://www.exploit-db.com/google-hacking-database)
+## Cómo he encontrado estos sitios de cámara web
 
-Necesitaremos encontrar varios sitios usando dorks con contenido interesante.
+Haciendo una búsqueda en Google con el siguiente dork:
 
-Explica cómo la tecnología que encontraste se puede exponer mediante el buscador de google, y si podemos evitarlo.
+intitle:"webcamXP" inurl:8080 
 
 
-Juan Manuel Herrera
+### Cámaras a las que he podido acceder:
+
+- [http://2.40.45.90:443/home.html](http://2.40.45.90:443/home.html)
+- [http://109.233.191.130:8080/](http://109.233.191.130:8080/)
+
+### Solución propuesta:
+
+Para evitar el acceso no autorizado, se debe:
+
+- Configurar correctamente estos dispositivos.
+- No dejar la configuración por defecto.
+- Implementar un acceso de autenticación.
+
+---
+
+## Cómo he encontrado la configuración de un sitio web
+
+Haciendo una búsqueda en Google con el siguiente dork:
+
+inurl:wp-config.txt intext:mysql 
+
+
+### Configuraciones de sitios web a las que he podido acceder:
+
+- [https://parramattasynagogue.com.au/wp-config.txt](https://parramattasynagogue.com.au/wp-config.txt)
+- [https://www.adultswithautism.org.uk/wp-config.txt](https://www.adultswithautism.org.uk/wp-config.txt)
+
+### Solución propuesta:
+
+Para restringir el acceso a estas configuraciones, se debe:
+
+- Restringir el acceso y configurar permisos para que solo pueda acceder el administrador del sistema.
+- Utilizar un plugin de seguridad de WordPress.
+
+---
+
+## Cómo he encontrado la configuración en formato JSON de un sitio web
+
+Haciendo una búsqueda en Google con el siguiente dork:
+
+intitle:"index of "conf.json" 
+
+### Configuraciones de sitios web a las que he podido acceder:
+
+- [https://computational-immunology.org/inge/jsartoolkit5/js/artoolkit.api.js](https://computational-immunology.org/inge/jsartoolkit5/js/artoolkit.api.js)
+- [http://kodetu.org/assets/libs/javascript.util/doc/conf.json](http://kodetu.org/assets/libs/javascript.util/doc/conf.json)
+
+### Solución propuesta:
+
+Para evitar el acceso no autorizado a estas configuraciones, se debe:
+
+- Restringir el acceso y configurar permisos para que solo pueda acceder el administrador del sistema.
+
+---
+
+**Juan Manuel Herrera**
+
